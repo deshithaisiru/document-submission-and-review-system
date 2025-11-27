@@ -51,13 +51,13 @@ export function RegisterPage() {
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <Input type="text" label="Full Name" placeholder="John Doe" value={name} onChange={e => setName(e.target.value)} required />
+          <Input type="text" label="Full Name" placeholder="Bruce Wayne" value={name} onChange={e => setName(e.target.value)} required />
 
           <Input type="email" label="Email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} required />
 
-          <Input type="password" label="Password" placeholder="••••••••" value={password} onChange={e => setPassword(e.target.value)} required />
+          <Input type="password" label="Password" placeholder="********" value={password} onChange={e => setPassword(e.target.value)} required />
 
-          <Input type="password" label="Confirm Password" placeholder="••••••••" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
+          <Input type="password" label="Confirm Password" placeholder="********" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
 
           {error && <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
               {error}
